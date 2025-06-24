@@ -13,6 +13,43 @@
   --dark: #1f1f1f;
 }
 
+/* language selector */
+
+.check {
+  position: relative;
+  width: 50px;
+}
+
+.check::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: white;
+  border-radius: 25px;
+}
+
+.check::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: black;
+  border-radius: 25px;
+  transition: 0.25;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.check:checked::after {
+  left: 25px;
+  border: 2px solid var(--secondary-color);
+}
+
+.check:checked::before {
+  background: var(--secondary-color);
+}
+
 /* navegation bar */
 #inicio-section {
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("img/fondo-skills.jpg");

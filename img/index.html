@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- navegation bar -->
+    <section id="inicio-section">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/KO/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio-section">INICIO</a></li>
+                            <li><a href="#sobremi-section">SOBRE MI</a></li>
+                            <li><a href="#projects-section">PROYECTOS</a></li>
+                            <li><a href="#contacto-section">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="redes">
+                        <a href="https://github.com/k3nli06" target="_blank"><img class="github"
+                                src="../img/github.png"></a>
+                        <a href="https://linkedin.com/in/kendry-onsang" target="_blank"><img class="linked-in"
+                                src="../img/linked-in.png"></a>
+                    </div>
+
+                    <div class="language">
+                        <span class="en" style="color: #019219;">Ingles</span>
+                        <input type="checkbox" class="check" checked>
+                        <span class="es" style="color: #9f00d0;">Español</span>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Kendry On Sang</span>, Desarrollador Backend</h2>
+                <p class="descripcion">Apasionado del desarrollo de software, autodidacta con amplia experiencia
+                    en Java y tecnologías relacionadas.</p>
+                <a href="#sobremi-section">Leer más</a>
+            </div>
+        </div>
+    </section>
+    <!-- sobre mi -->
+    <section id="sobremi-section">
+        <div class="sobremi">
+            <h2>Sobre Mi</h2>
+            <p>Me destaco por mi capacidad para resolver problemas complejos y mi enfoque proactivo para mejorar
+                procesos. Busco un ambiente que me permita contribuir con mis habilidades y aumentar mis
+                capacidades en el ámbito del desarrollo backend.</p>
+            <p>Siempre he tenido un amplio interes por la tecnologia, lo cual me ha llevado a aprender sobre
+                programacion y sus areas para asi dedicarme a este ambito del desarrollo backend.
+            </p>
+            <a href="../curriculum Kendry es.pdf" target="_blank">Descargar CV</a>
+        </div>
+        <div class="conocimientos">
+            <h2>Conocimientos</h2>
+            <h3>Tecnologias</h3>
+            <div class="tecnologys">
+                <div class="tecnologys-parts"><img src="../img/java.png" alt="">
+                    <h4>Java</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/Spring.png" alt="">
+                    <h4>Spring</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/spring-boot.png" alt="">
+                    <h4>Spring Boot</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/spring-security.png" alt="">
+                    <h4>Spring Security</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/my-sql.png" alt="">
+                    <h4>MySQL</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/postgre-sql.png" alt="">
+                    <h4>PostgreSQL</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/mongodb.png" alt="">
+                    <h4>Mongodb</h4>
+                </div>
+                <div class="tecnologys-parts"><img src="../img/jwt.png" alt="">
+                    <h4>JWT</h4>
+                </div>
+            </div>
+            <h3>Herramientas</h3>
+
+            <div class="tools">
+                <div class="tools-parts"><img src="../img/docker-icon.png" alt="">
+                    <h4>Docker</h4>
+                </div>
+                <div class="tools-parts"><img src="../img/git.png" alt="">
+                    <h4>Git</h4>
+                </div>
+                <div class="tools-parts"><img src="../img/postman.png" alt="">
+                    <h4>Postman</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr color="#019219">
+
+    <section id="projects-section">
+        <div class="projects">
+            <h2 class="titulo-seccion">Mis Proyectos</h2>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="../img/livechat.PNG" alt="">
+                    <div class="info">
+                        <h4>LiveChat</h4>
+                        <p>Una aplicación de chat que permite que los usuarios conversen en tiempo real, creando salas de conversación con distintos temas según el interés de los usuarios. Con mensajes persistentes y seguridad basado en Json Web Token.</p>
+                        <a href="https://github.com/k3nli06/LiveChat" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr color="#019219">
+
+    <section id="contacto-section">
+        <div class="contacto">
+            <h2>contacto</h2>
+            <div class="form-class">
+                <h3>Envia tu mensaje...</h3>
+                <form id="form" class="form">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Tu mensaje aqui..." required></textarea>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+            <div id="respuesta"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados - 2025</p>
+        <div class="redes">
+            <a href="https://github.com/k3nli06" target="_blank"><img src="../img/github.png"></a>
+            <a href="https://linkedin.com/in/kendry-onsang" target="_blank"><img src="../img/linked-in.png"></a>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Inicializá con tu PUBLIC KEY (lo ves en EmailJS > Account)
+        emailjs.init('CG6k84XJ8G4kK2m_U')
+        const form = document.getElementById("form");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // evita el submit normal
+
+            emailjs.sendForm("default_service", "template_3o22joh", form)
+                .then(() => {
+                    document.getElementById("respuesta").innerText = "✅ ¡Mensaje enviado correctamente!";
+                    form.reset(); // opcional: limpia el formulario
+                }, (error) => {
+                    document.getElementById("respuesta").innerText = "❌ Error al enviar: " + error.text;
+                });
+        });
+    });
+</script>
+<script src="../script.js"></script>
+
+</html>
